@@ -15,4 +15,5 @@
 4. There will be property of predators. The predators will eat creatures. if a predator is on a tile, tile is colored black. The predators will also make random move of up, down left or right.
 - if predator and creature is on the same tile, the predator eat the creature, creature disappear. Predator keeps moving.
 - If predator moves every round no matter its food, water, or land tile. 
-If predator eat five creatures, it will reproduce, and create a new predator. 
+If predator eat five creatures, it will reproduce, and create a new predator.
+- If a predator doesn't eat for 10 moves, it dies.
