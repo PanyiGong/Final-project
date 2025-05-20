@@ -1,5 +1,6 @@
 # Final-project: The Ecosystem project
-## In this project, I will use 2D arrays to model an Ecosystem:
+## In this project, I will use 2D arrays to model an Ecosystem with creatures and predators. 
+
 
 1. Consider the ecosystem’s world to be a CA. The creatures move from tile to tile, and each tile has a state. It is either land, water, or food. If it is land, color it yellow, if it is water, color it blue, if it is food, color it green.
    
