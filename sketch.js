@@ -46,6 +46,15 @@ function setup(){
     }
   }
   
+  for (let k = 0; k < 50; k++) {
+    let px = floor(random(columns));
+    let py = floor(random(rows));
+    if (!Earth[px][py].hasCreature && !Earth[px][py].hasPredator) {
+      predators.push(new Predator(px, py));
+      Earth[px][py].hasPredator = true;
+    }
+  }
+  
 }
 
 
@@ -58,15 +67,25 @@ function draw() {
     }
   }
 
-  //some code that Initializes creatures and predators here.
+  //some code that Initialize creatures and predators here.
   // TODO Code 1
     for (let c of creatures) {
     c.update();
   }
   
+  
+  // Update predators
+  for (let p of predators) {
+    p.update();
+  
+    //show grids.
   for (let i = 0; i < columns; i++) {
     for (let j = 0; j < rows; j++) {
       Earth[i][j].show();
     }
   }
 }
+}
+
+
+
