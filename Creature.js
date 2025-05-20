@@ -76,7 +76,7 @@ class Creature {
       this.reproduce();
     }
 
-    if (this.movesWithoutFood >= 20) {
+    if (this.movesWithoutFood >= 15) {
       this.die();
     }
   }
@@ -114,6 +114,9 @@ class Creature {
         break;
       }
     }
+  }
+}
+
   }
 }
 
